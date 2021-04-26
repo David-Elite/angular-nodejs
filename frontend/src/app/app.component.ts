@@ -10,14 +10,12 @@ export class AppComponent {
   
   title = 'frontend';
 
-  constructor (private api : ApiService){}
+  constructor (){}
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    
+   
   }
-  apiData(){
-    this.api.getData();
-  }
+  
  
 }

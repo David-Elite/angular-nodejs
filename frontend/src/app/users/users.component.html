@@ -1,0 +1,13 @@
+<div>
+    <h1> Users Details </h1>
+  </div>
+  <div class="row" *ngFor="let item of api.users">
+    
+    <mat-card [routerLink]="['/profile', item._id]" style="cursor: pointer;">{{item.email}}
+      <mat-divider></mat-divider>
+    </mat-card>
+   
+    <mat-card>{{item.password}}
+        <mat-divider></mat-divider>
+      </mat-card>
+  </div>

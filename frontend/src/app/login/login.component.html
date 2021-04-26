@@ -1,0 +1,21 @@
+<mat-card style="display: grid; text-align: center; place-items: center;">
+    <mat-card-header>
+        <mat-card-title>
+           <h1>Login From</h1> 
+        </mat-card-title>
+    </mat-card-header>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>UserName</mat-label>
+      <input matInput placeholder="Username" type="email" value="S" name="email" [(ngModel)]="login.email">
+    </mat-form-field>
+  <br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Password" type="password" name="password" [(ngModel)]="login.password">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button class="primary" (click)="loginData()"> Login</button>
+  </form>
+</mat-card>
+
